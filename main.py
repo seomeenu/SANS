@@ -14,13 +14,22 @@ class Printer:
     def print_the_text(self):
         print(self.text)
 
+def 백을_리턴하는_두번째_함수():
+    return ord("d")
+
+def 백을_리턴하는_함수이다():
+    zero_stred = str(get_not_negative_integer_and_not_positive_integer())
+    일영영 = str(ord("\x01")) + zero_stred + str(get_not_negative_integer_and_not_positive_integer())
+    return 200 - int(일영영)
+    
 #음의 정수도 아니고 양의 정수도 아닌 정수를 반환하는 함수이다.
 def get_not_negative_integer_and_not_positive_integer():
-    one_hundred = 100
+    one_hundred = 백을_리턴하는_두번째_함수()
     for i in range(0, 100):
         one_hundred -= 1
 
-    return one_hundred
+    zero = one_hundred
+    return zero
 
 #18보다 크고 20보다 작은 정수를 반환한다.
 def get_nineteen():
@@ -64,11 +73,21 @@ def get_the_first_alphabet_of_the_english_language():
     return alphabet[get_not_negative_integer_and_not_positive_integer()]
 
 def get_eighteen():
-    return math.floor(get_pi() * 100) - 300 + 4
+    return math.floor(get_pi() * 백을_리턴하는_함수이다()) - 백을_리턴하는_함수이다() * 3 + 4
     
 def get_the_eightteenth_alphabet_of_the_english_language(eighteen):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     return alphabet[get_not_negative_integer_and_not_positive_integer() + eighteen]
 
 sa = get_the_eightteenth_alphabet_of_the_english_language(get_eighteen()) + get_the_first_alphabet_of_the_english_language()
-print(sa)
+
+def N을_반환하는_함수():
+    백십 = 백을_리턴하는_함수이다() + 10
+    return chr(백십)
+
+엔 = N을_반환하는_함수()
+
+프린터 = Printer(sa + 엔 + "z")
+#최적화를 위하여 프린터 클래스의 프린트 함수를 호출하지 않는다.
+# 프린터.print_the_text()
+print("sans")
